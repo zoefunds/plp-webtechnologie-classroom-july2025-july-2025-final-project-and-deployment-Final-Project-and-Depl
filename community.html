@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Community Hub - HealthLearn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/community.js" defer></script>
+</head>
+<body>
+    <header class="community-header">
+        <div class="header-content">
+            <h1>Health Community Hub</h1>
+            <div class="community-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>12,458 Members</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-comments"></i>
+                    <span>2,845 Discussions</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>1,523 Solutions</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="community-container">
+        <aside class="forum-sidebar">
+            <div class="user-profile-card">
+                <img src="images/M1.jpg" alt="User Avatar" class="profile-avatar">
+                <h3>Welcome, padebiyi136!</h3>
+                <div class="user-stats">
+                    <div>Posts: 45</div>
+                    <div>Reputation: 320</div>
+                    <div>Joined: Aug 2025</div>
+                </div>
+                <button class="new-topic-btn primary-btn">
+                    <i class="fas fa-plus"></i> Start New Discussion
+                </button>
+            </div>
+
+            <div class="forum-categories">
+                <h3>Health Topics</h3>
+                <ul class="category-list">
+                    <li data-category="mental-health" class="active">
+                        <i class="fas fa-brain"></i>
+                        <span>Mental Health</span>
+                        <span class="topic-count">352</span>
+                    </li>
+                    <li data-category="nutrition">
+                        <i class="fas fa-apple-alt"></i>
+                        <span>Nutrition & Diet</span>
+                        <span class="topic-count">284</span>
+                    </li>
+                    <li data-category="fitness">
+                        <i class="fas fa-running"></i>
+                        <span>Fitness & Exercise</span>
+                        <span class="topic-count">198</span>
+                    </li>
+                    <li data-category="disease-prevention">
+                        <i class="fas fa-shield-virus"></i>
+                        <span>Disease Prevention</span>
+                        <span class="topic-count">245</span>
+                    </li>
+                    <li data-category="maternal-health">
+                        <i class="fas fa-baby"></i>
+                        <span>Maternal Health</span>
+                        <span class="topic-count">167</span>
+                    </li>
+                    <li data-category="first-aid">
+                        <i class="fas fa-first-aid"></i>
+                        <span>First Aid</span>
+                        <span class="topic-count">143</span>
+                    </li>
+                </ul>
+
+                <h3>Featured Groups</h3>
+                <ul class="featured-groups">
+                    <li>
+                        <img src="images/MW.jpg" alt="Mental Wellness">
+                        <div class="group-info">
+                            <h4>Mental Wellness Support</h4>
+                            <span>1.2k members</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/HLC.jpg" alt="Healthy Living">
+                        <div class="group-info">
+                            <h4>Healthy Living Community</h4>
+                            <span>2.3k members</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="trending-tags">
+                <h3>Trending Topics</h3>
+                <div class="tag-cloud">
+                    <span class="tag">#MentalHealth</span>
+                    <span class="tag">#COVID19</span>
+                    <span class="tag">#Nutrition</span>
+                    <span class="tag">#Exercise</span>
+                    <span class="tag">#Wellness</span>
+                    <span class="tag">#Healthcare</span>
+                    <span class="tag">#Prevention</span>
+                </div>
+            </div>
+        </aside>
+
+        <section class="forum-content">
+            <div class="content-header">
+                <div class="search-filters">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search discussions...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-options">
+                        <select class="filter-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="unanswered">Unanswered</option>
+                        </select>
+                        <button class="filter-btn">
+                            <i class="fas fa-filter"></i> Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discussion-list">
+                <!-- Featured Discussion -->
+                <article class="discussion-card featured">
+                    <div class="discussion-meta">
+                        <div class="author-info">
+                            <img src="images/M1.jpg" alt="Expert Avatar">
+                            <div class="author-details">
+                                <span class="author-name">Environmental Health Scientist</span>
+                                <span class="author-title">Mental Health Expert</span>
+                            </div>
+                        </div>
+                        <span class="featured-badge">
+                            <i class="fas fa-star"></i> Featured
+                        </span>
+                    </div>
+                    <div class="discussion-content">
+                        <h3>Understanding Anxiety and Depression in Modern Times</h3>
+                        <p>Join our expert-led discussion on recognizing and managing anxiety and depression in today's fast-paced world...</p>
+                        <div class="discussion-stats">
+                            <span><i class="fas fa-comment"></i> 156 replies</span>
+                            <span><i class="fas fa-eye"></i> 2.3k views</span>
+                            <span><i class="fas fa-heart"></i> 342 likes</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Discussions -->
+                <div class="regular-discussions" id="discussionsList">
+                    <!-- Dynamically populated with discussions -->
+                </div>
+            </div>
+
+            <!-- Expert Q&A Section -->
+            <section class="expert-qa">
+                <h2>Expert Q&A Sessions</h2>
+                <div class="qa-sessions">
+                    <div class="qa-card upcoming">
+                        <div class="qa-header">
+                            <span class="qa-status">Upcoming</span>
+                            <span class="qa-date">Sep 1, 2025</span>
+                        </div>
+                        <div class="qa-content">
+                            <img src="images/M1.jpg" alt="Expert">
+                            <h3>Live Q&A: Nutrition for Mental Health</h3>
+                            <p>With Sanitarian Adebiyi Precious, Environmental Health Scientist</p>
+                            <button class="reminder-btn">
+                                <i class="fas fa-bell"></i> Set Reminder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="community-sidebar">
+            <div class="active-members">
+                <h3>Active Now</h3>
+                <div class="members-list">
+                    <!-- Dynamically populated with active members -->
+                </div>
+            </div>
+
+            <div class="upcoming-events">
+                <h3>Community Events</h3>
+                <div class="event-list">
+                    <!-- Dynamically populated with events -->
+                </div>
+            </div>
+
+            <div class="community-resources">
+                <h3>Quick Resources</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-book"></i>
+                        <a href="#">Community Guidelines</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-question-circle"></i>
+                        <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-hands-helping"></i>
+                        <a href="#">Support Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- New Discussion Modal -->
+    <div class="modal" id="newDiscussionModal">
+        <div class="modal-content">
+            <h2>Start New Discussion</h2>
+            <form id="newDiscussionForm">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" required placeholder="Enter discussion title">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select required>
+                        <option value="">Select category</option>
+                        <option value="mental-health">Mental Health</option>
+                        <option value="nutrition">Nutrition</option>
+                        <!-- More options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea required placeholder="Share your thoughts..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tags</label>
+                    <input type="text" placeholder="Add tags (comma separated)">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Post Discussion</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

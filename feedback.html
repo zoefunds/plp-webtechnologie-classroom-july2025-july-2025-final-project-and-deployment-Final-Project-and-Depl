@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - HealthLearn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/feedback.js" defer></script>
+</head>
+<body>
+    <header class="simple-header">
+        <h1><i class="fas fa-comments"></i> Feedback</h1>
+        <p>We value your feedback to improve HealthLearn. Share your thoughts, suggestions, or report any issues below!</p>
+    </header>
+    <main class="feedback-container">
+        <form class="feedback-form">
+            <div class="form-group">
+                <label for="experience"><i class="fas fa-star"></i> How would you rate your experience?</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="ok">Okay</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="features"><i class="fas fa-thumbs-up"></i> What features do you like most?</label>
+                <input type="text" id="features" name="features" placeholder="e.g. Course library, Community, Live events">
+            </div>
+            <div class="form-group">
+                <label for="improvement"><i class="fas fa-lightbulb"></i> Suggestions for improvement:</label>
+                <textarea id="improvement" name="improvement" rows="3" placeholder="Let us know what can be better"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="comments"><i class="fas fa-comment"></i> Additional Comments</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Your suggestions or thoughts"></textarea>
+            </div>
+            <button type="submit" class="feedback-btn">Submit Feedback</button>
+            <div class="feedback-info">
+                <p>For urgent issues, please <a href="contact.html">contact support</a>.</p>
+            </div>
+        </form>
+    </main>
+    <footer class="simple-footer">
+        <p>&copy; 2025 HealthLearn. All rights reserved.</p>
+    </footer>
+</body>
+</html>

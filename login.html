@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HealthLearn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Panel - Login Form -->
+        <div class="login-panel">
+            <div class="login-header">
+                <img src="images/B.jpg" alt="HealthLearn Logo" class="logo">
+                <h1>Welcome Back!</h1>
+                <p>Access your personalized health learning experience</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="email">Email or Username</label>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input 
+                            type="text" 
+                            id="email" 
+                            name="email" 
+                            required
+                            autocomplete="username"
+                            placeholder="Enter your email or username"
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            required
+                            autocomplete="current-password"
+                            placeholder="Enter your password"
+                        >
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Log In
+                </button>
+
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn google">
+                        <img src="images/google.jpg" alt="Google">
+                        Google
+                    </button>
+                    <button type="button" class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                        Apple
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="security-info">
+                <i class="fas fa-shield-alt"></i>
+                <span>Your connection is secure and encrypted</span>
+            </div>
+        </div>
+
+        <!-- Right Panel - Features Showcase -->
+        <div class="features-panel">
+            <div class="features-content">
+                <h2>Your Journey to Better Health Starts Here</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Expert-Led Courses</h3>
+                        <p>Learn from certified healthcare professionals and industry experts</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Earn Certificates</h3>
+                        <p>Get recognized for your achievements with accredited certifications</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Support</h3>
+                        <p>Join a global community of health enthusiasts and professionals</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Learn Anywhere</h3>
+                        <p>Access your courses on any device, anytime, anywhere</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <img src="images/M1.jpg" alt="Adebiyi Precious" class="testimonial-avatar">
+                            <blockquote>
+                                "HealthLearn has transformed the way I approach healthcare education. The courses are comprehensive and the community is incredibly supportive."
+                            </blockquote>
+                            <cite>
+                                Sanitarian Adebiyi Precious,
+                                <span>Environmental Health Scientist</span>
+                            </cite>
+                        </div>
+                    </div>
+                    <!-- More testimonials -->
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-value">50,000+</span>
+                        <span class="stat-label">Active Learners</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">200+</span>
+                        <span class="stat-label">Expert Instructors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">150+</span>
+                        <span class="stat-label">Courses Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Reset Modal -->
+    <div class="modal" id="passwordResetModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Reset Your Password</h2>
+            <p>Enter your email address and we'll send you instructions to reset your password.</p>
+            
+            <form id="resetPasswordForm">
+                <div class="input-group">
+                    <label for="resetEmail">Email Address</label>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input 
+                            type="email" 
+                            id="resetEmail" 
+                            name="resetEmail" 
+                            required
+                            placeholder="Enter your email address"
+                        >
+                    </div>
+                </div>
+                <button type="submit" class="reset-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Reset Instructions
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2FA Verification Modal -->
+    <div class="modal" id="twoFactorModal">
+        <div class="modal-content">
+            <h2>Two-Factor Authentication</h2>
+            <p>Enter the verification code sent to your device</p>
+            
+            <form id="twoFactorForm">
+                <div class="code-inputs">
+                    <input type="text" maxlength="1" class="code-input" required>
+                    <input type="text" maxlength="1" class="code-input" required>
+                    <input type="text" maxlength="1" class="code-input" required>
+                    <input type="text" maxlength="1" class="code-input" required>
+                    <input type="text" maxlength="1" class="code-input" required>
+                    <input type="text" maxlength="1" class="code-input" required>
+                </div>
+                <div class="verification-options">
+                    <button type="button" class="resend-code">Resend Code</button>
+                    <span class="timer">Resend in: 59s</span>
+                </div>
+                <button type="submit" class="verify-btn">Verify</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

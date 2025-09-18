@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #27ae60;
+    --accent-color: #3498db;
+    --background-color: #f5f6fa;
+    --text-color: #2c3e50;
+    --border-color: #e1e8ed;
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.legal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 0 1.2rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+.legal-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.legal-header nav {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+.legal-header nav a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+    margin-right: 0.8rem;
+    transition: opacity 0.2s;
+}
+.legal-header nav a.active {
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.legal-header nav a:hover {
+    opacity: 1;
+}
+
+.legal-content {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 2rem 2.2rem;
+    margin: 2rem auto;
+}
+
+.legal-content h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.legal-content h3 {
+    color: var(--accent-color);
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+}
+.legal-content ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+.legal-content li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.legal-content a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.legal-content a:hover {
+    color: var(--secondary-color);
+}
+
+.legal-update {
+    margin-top: 2.5rem;
+    color: #6c757d;
+    font-size: 0.95rem;
+    text-align: right;
+    opacity: 0.8;
+}
+
+.legal-footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 600px) {
+    .legal-header h1 {
+        font-size: 1.3rem;
+    }
+    .legal-content {
+        padding: 1rem 0.7rem;
+    }
+    .container {
+        padding: 0 0.7rem;
+    }
+}

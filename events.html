@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events & Webinars - HealthLearn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/events.js" defer></script>
+</head>
+<body>
+    <header class="events-header">
+        <div class="header-content">
+            <h1>Live Events & Expert Sessions</h1>
+            <div class="events-stats">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>15 Upcoming Events</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>5,234 Registered Attendees</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>42 Expert Speakers</span>
+                </div>
+            </div>
+            <div class="user-timezone">
+                <i class="fas fa-globe"></i>
+                <span>Your timezone: UTC (15:09:08)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="events-container">
+        <!-- Left Sidebar -->
+        <aside class="events-sidebar">
+            <div class="user-events-panel">
+                <div class="user-profile">
+                    <img src="images/M1.jpg" alt="padebiyi136" class="user-avatar">
+                    <div class="user-info">
+                        <h3>Welcome, padebiyi136!</h3>
+                        <p>Your upcoming events: 3</p>
+                    </div>
+                </div>
+                <div class="quick-actions">
+                    <button class="action-btn primary">
+                        <i class="fas fa-calendar-plus"></i>
+                        My Calendar
+                    </button>
+                    <button class="action-btn secondary">
+                        <i class="fas fa-certificate"></i>
+                        My Certificates
+                    </button>
+                </div>
+            </div>
+
+            <div class="events-filter">
+                <h3>Filter Events</h3>
+                <div class="filter-group">
+                    <h4>Event Type</h4>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Webinars
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Health Talks
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Expert Q&A
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Workshops
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Topics</h4>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Mental Health
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Nutrition
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> Disease Prevention
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> First Aid
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Language</h4>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked> English
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"> Spanish
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox"> French
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="events-main">
+            <!-- Featured Event -->
+            <div class="featured-event">
+                <div class="live-badge">
+                    <span class="pulse"></span> LIVE NOW
+                </div>
+                <div class="event-content">
+                    <div class="event-details">
+                        <h2>Mental Health in the Digital Age</h2>
+                        <p class="event-meta">
+                            <span><i class="fas fa-clock"></i> Starting now</span>
+                            <span><i class="fas fa-users"></i> 1,234 attending</span>
+                            <span><i class="fas fa-globe"></i> English</span>
+                        </p>
+                        <p class="event-description">
+                            Join Sanitarian Adebiyi Precious as she discusses the impact of digital technology on mental health and provides practical strategies for maintaining psychological well-being in today's connected world.
+                        </p>
+                        <div class="speaker-info">
+                            <img src="images/M1.jpg" alt="Sanitarian Adebiyi Precious" class="speaker-avatar">
+                            <div class="speaker-details">
+                                <h4>Sanitarian Adebiyi Precious</h4>
+                                <p>Environmental Health Scientist</p>
+                            </div>
+                        </div>
+                        <button class="join-now-btn">
+                            <i class="fas fa-video"></i> Join Live Session
+                        </button>
+                    </div>
+                    <div class="event-preview">
+                        <img src="images/PRE.jpeg" alt="Event Preview">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <section class="upcoming-events">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="events-grid">
+                    <!-- Event Card 1 -->
+                    <article class="event-card">
+                        <div class="event-image">
+                            <img src="images/NM.jpg" alt="Nutrition Workshop">
+                            <span class="event-type webinar"></span>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-datetime">
+                                <div class="date">SEP 1</div>
+                                <div class="time">10:00 AM UTC</div>
+                            </div>
+                            <h3>Nutrition for Mental Wellness</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 234 registered</span>
+                                <span><i class="fas fa-clock"></i> 90 min</span>
+                            </div>
+                            <button class="register-btn">Register Now</button>
+                        </div>
+                    </article>
+
+                    <!-- Event Card 2 -->
+                    <article class="event-card premium">
+                        <div class="event-image">
+                            <img src="images/AID.jpg" alt="Expert Q&A">
+                        </div>
+                        <div class="event-info">
+                            <div class="event-datetime">
+                                <div class="date">SEP 2</div>
+                                <div class="time">2:00 PM UTC</div>
+                            </div>
+                            <h3>Ask Me Anything: First Aid Essentials</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-users"></i> 156 registered</span>
+                                <span><i class="fas fa-clock"></i> 60 min</span>
+                            </div>
+                            <button class="register-btn premium">Upgrade to Join</button>
+                        </div>
+                    </article>
+
+                    <!-- More event cards... -->
+                </div>
+            </section>
+
+            <!-- Past Events Section -->
+            <section class="past-events">
+                <h2>Recent Recordings</h2>
+                <div class="recordings-grid">
+                    <!-- Recording Card 1 -->
+                    <article class="recording-card">
+                        <div class="recording-thumbnail">
+                            <img src="images/AM.jpg" alt="Past Event">
+                            <span class="duration">1:25:30</span>
+                        </div>
+                        <div class="recording-info">
+                            <h3>Understanding Anxiety Disorders</h3>
+                            <p>Dr. James Wilson shares insights on recognizing and managing anxiety disorders.</p>
+                            <div class="recording-meta">
+                                <span><i class="fas fa-play-circle"></i> 1,234 views</span>
+                                <span><i class="fas fa-calendar"></i> Aug 30, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- More recording cards... -->
+                </div>
+            </section>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="events-sidebar-right">
+            <div class="calendar-widget">
+                <div class="calendar-header">
+                    <h3>September 2025</h3>
+                    <div class="calendar-nav">
+                        <button><i class="fas fa-chevron-left"></i></button>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <!-- Calendar implementation -->
+                </div>
+            </div>
+
+
+            <div class="event-resources">
+                <h3>Event Resources</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-file-pdf"></i>
+                        <a href="#">Session Guidelines</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-download"></i>
+                        <a href="#">Technical Requirements</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-question-circle"></i>
+                        <a href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <h2>Register for Event</h2>
+            <form id="eventRegistrationForm">
+                <!-- Form content -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Learning Courses - HealthLearn</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/courses.js" defer></script>
+</head>
+<body>
+    <header class="courses-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/B.jpg" alt="HealthLearn Logo" width="180">
+            </div>
+            <div class="header-info">
+                <h1>Health Education Courses</h1>
+                <div class="course-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-book-medical"></i>
+                        <span>150+ Courses</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>50,000+ Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>200+ Certificates Issued</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-menu">
+                <img src="images/M1.jpg" alt="padebiyi136" class="user-avatar">
+                <div class="user-info">
+                    <span>Welcome, padebiyi136</span>
+                    <small>Last login: 2025-08-31 15:20:19</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="courses-container">
+        <!-- Left Sidebar - Course Navigation -->
+        <aside class="course-sidebar">
+            <div class="learning-progress">
+                <h3>My Learning Progress</h3>
+                <div class="progress-circle">
+                    <svg>
+                        <circle cx="60" cy="60" r="50"></circle>
+                        <circle cx="60" cy="60" r="50" style="stroke-dashoffset: calc(315 - (315 * 45) / 100);"></circle>
+                    </svg>
+                    <div class="percentage">45%</div>
+                </div>
+                <div class="progress-stats">
+                    <div>Courses in Progress: 3</div>
+                    <div>Completed Courses: 5</div>
+                    <div>Certificates Earned: 4</div>
+                </div>
+            </div>
+
+            <div class="course-filters">
+                <h3>Filter Courses</h3>
+                
+                <div class="filter-group">
+                    <h4>Health Categories</h4>
+                    <div class="category-list">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Mental Health</span>
+                            <span class="count">(45)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Maternal Health</span>
+                            <span class="count">(32)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>First Aid</span>
+                            <span class="count">(28)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Nutrition</span>
+                            <span class="count">(35)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Disease Prevention</span>
+                            <span class="count">(40)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Difficulty Level</h4>
+                    <div class="level-list">
+                        <label class="radio-label">
+                            <input type="radio" name="level">
+                            <span>Beginner</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level">
+                            <span>Intermediate</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level">
+                            <span>Advanced</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Duration</h4>
+                    <div class="duration-list">
+                        <label class="radio-label">
+                            <input type="radio" name="duration">
+                            <span>< 2 hours</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="duration">
+                            <span>2-5 hours</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="duration">
+                            <span>5+ hours</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="courses-main">
+            <!-- Featured Course -->
+            <div class="featured-course">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <span class="featured-badge">Featured Course</span>
+                        <h2>Complete Mental Health First Aid Certification</h2>
+                        <p class="course-description">
+                            Learn to identify, understand and respond to signs of mental illness and substance use disorders in your community.
+                        </p>
+                        <div class="course-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <span>40 hours of content</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>2,345 enrolled</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (450 reviews)</span>
+                            </div>
+                        </div>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                    <div class="featured-image">
+                        <img src="images/AID.jpg" alt="Mental Health First Aid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Categories -->
+            <div class="course-categories">
+                <h2>Popular Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card mental-health">
+                        <i class="fas fa-brain"></i>
+                        <h3>Mental Health</h3>
+                        <span>45 Courses</span>
+                    </div>
+                    <div class="category-card maternal">
+                        <i class="fas fa-baby"></i>
+                        <h3>Maternal Health</h3>
+                        <span>32 Courses</span>
+                    </div>
+                    <div class="category-card nutrition">
+                        <i class="fas fa-apple-alt"></i>
+                        <h3>Nutrition</h3>
+                        <span>35 Courses</span>
+                    </div>
+                    <div class="category-card first-aid">
+                        <i class="fas fa-first-aid"></i>
+                        <h3>First Aid</h3>
+                        <span>28 Courses</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Listing -->
+            <div class="course-listing">
+                <div class="listing-header">
+                    <h2>Available Courses</h2>
+                    <div class="listing-controls">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search courses...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <select class="sort-select">
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest First</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Course Card 1 -->
+                    <article class="course-card">
+                        <div class="course-image">
+                            <img src="images/AM.jpg" alt="Anxiety Management">
+                            <span class="level-badge intermediate">Intermediate</span>
+                            <div class="course-preview">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Preview Course</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-tags">
+                                <span class="tag">Mental Health</span>
+                                <span class="tag">Self-Care</span>
+                            </div>
+                            <h3>Understanding and Managing Anxiety</h3>
+                            <div class="instructor">
+                                <img src="images/M1.jpg" alt="Sanitarian Adebiyi Precious">
+                                <span>Sanitarian Adebiyi Precious</span>
+                            </div>
+                            <div class="course-meta">
+                                <span><i class="fas fa-book"></i> 12 Modules</span>
+                                <span><i class="fas fa-clock"></i> 6 Hours</span>
+                                <span><i class="fas fa-user-graduate"></i> 1,234 Students</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.5 (230 reviews)</span>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                                <span>60% Complete</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course Card 2 -->
+                    <article class="course-card premium">
+                        <div class="course-image">
+                            <img src="images/NM.jpg" alt="Nutrition Fundamentals">
+                            <span class="level-badge beginner">Beginner</span>
+                            <span class="premium-badge">
+                                <i class="fas fa-crown"></i> Premium
+                            </span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-tags">
+                                <span class="tag">Nutrition</span>
+                                <span class="tag">Health</span>
+                            </div>
+                            <h3>Fundamentals of Nutrition Science</h3>
+                            <div class="instructor">
+                                <img src="images/M1.jpg" alt="Sanitarian Adebiyi Precious">
+                                <span>Sanitarian Adebiyi Precious</span>
+                            </div>
+                            <div class="course-meta">
+                                <span><i class="fas fa-book"></i> 15 Modules</span>
+                                <span><i class="fas fa-clock"></i> 8 Hours</span>
+                                <span><i class="fas fa-user-graduate"></i> 2,156 Students</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (345 reviews)</span>
+                            </div>
+                            <button class="enroll-btn premium">Upgrade to Access</button>
+                        </div>
+                    </article>
+
+                    <!-- More course cards... -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
+                    <div class="page-numbers">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>...</span>
+                        <span>12</span>
+                    </div>
+                    <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="learning-sidebar">
+            <div class="my-courses">
+                <h3>My Current Courses</h3>
+                <div class="current-courses">
+                    <div class="course-item">
+                        <img src="images/AM.jpg" alt="Anxiety Management">
+                        <div class="course-info">
+                            <h4>Understanding and Managing Anxiety</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                            <span>60% Complete</span>
+                        </div>
+                    </div>
+                    <!-- More current courses... -->
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <h3>Recommended Learning Path</h3>
+                <div class="path-courses">
+                    <div class="path-item">
+                        <span class="step-number">1</span>
+                        <div class="step-info">
+                            <h4>Mental Health Basics</h4>
+                            <span>Foundation Course</span>
+                        </div>
+                        <span class="status completed">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                    </div>
+                    <!-- More path items... -->
+                </div>
+            </div>
+
+            <div class="achievements">
+                <h3>My Achievements</h3>
+                <div class="badges-grid">
+                    <div class="badge-item">
+                        <img src="images/MHE.jpg" alt="Mental Health Expert">
+                        <span>Mental Health Expert</span>
+                    </div>
+                    <!-- More badges... -->
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
